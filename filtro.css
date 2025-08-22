@@ -22,3 +22,36 @@ input {
   width: 70%;
   height: auto
 }
+/*contenedor para los productos*/
+#lista-de-productos{
+  display: flex;
+  flex-wrap: wrap; /*permite el ajuste de elementos*/
+  justify-content: center;/*Centra horizontalmente los productos*/
+}
+/*Estilos para cada producto individual*/
+.producto{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;/*Distribuye espacio entre elementos*/
+  padding: 10px;
+  box-sizing: border-box;/*asegura que no se afecte al ancho alto por las propiedades*/
+}
+/*img*/
+
+.producto img{
+    width: 70%;
+    height: auto;
+    object-fit: contain; /* Evita que la imagen se distorsione */
+
+}
+/*Estilos del titulo*/
+.producto .titulo{
+    font-weight: bold;
+    text-align: center;
+    color: blueviolet;
+}
